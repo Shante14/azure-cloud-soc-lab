@@ -76,7 +76,7 @@ Activity consistent with automated brute-force attack behavior
 
 Risk Assessment
 
-High — Public-facing RDP endpoints are frequently targeted by automated credential attacks.
+High Public-facing RDP endpoints are frequently targeted by automated credential attacks.
 
 Remediation Recommendations
 
