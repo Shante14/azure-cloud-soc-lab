@@ -58,3 +58,56 @@ SecurityEvent
 | summarize FailedAttempts = count() by IPAddress, bin(TimeGenerated, 5m)
 | where FailedAttempts > 50
 | sort by FailedAttempts desc
+
+Top Attacking IP Addresses
+SecurityEvent
+| where EventID == 4625
+| summarize Attempts = count() by IPAddress
+| sort by Attempts desc
+
+Username Targeting Analysis
+SecurityEvent
+| where EventID == 4625
+| summarize Attempts = count() by TargetUserName
+| sort by Attempts desc
+
+Investigation Findings
+
+Detected over 1,000 failed login attempts within minutes
+
+Observed repeated targeting of administrative usernames
+
+Identified multiple international source IP addresses
+
+Activity consistent with automated brute-force attack behavior
+
+Risk Assessment
+
+High — Public-facing RDP endpoints are frequently targeted by automated credential attacks.
+
+Remediation Recommendations
+
+Remove direct public RDP exposure
+
+Implement Azure Bastion for secure remote access
+
+Enforce Multi-Factor Authentication (MFA)
+
+Restrict inbound traffic using NSG rules
+
+Implement account lockout thresholds
+
+Skills Demonstrated
+
+SIEM deployment and configuration
+
+Azure log ingestion and monitoring
+
+KQL query development
+
+Threat detection and event correlation
+
+Incident triage documentation
+
+Cloud security best practices
+---
