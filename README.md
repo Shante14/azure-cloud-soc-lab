@@ -21,6 +21,10 @@ The lab simulates real-world attack traffic against a publicly exposed virtual m
 ---
 
 ## Architecture Overview
+### Azure Resource Group Overview
+
+![Architecture Overview](architecture-overview.png)
+
 
 ### Environment Components
 
