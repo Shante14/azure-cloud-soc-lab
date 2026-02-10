@@ -10,6 +10,11 @@ This project demonstrates the deployment of a cloud-based Security Operations Ce
 
 The lab simulates real-world attack traffic against a publicly exposed virtual machine and analyzes security events using SIEM capabilities.
 
+Why This Lab Matters
+
+Public-facing RDP services are among the most commonly targeted attack vectors in cloud environments. This lab demonstrates how centralized logging and SIEM analytics can detect, investigate, and respond to brute-force authentication attempts in real time.
+
+
 ### Objectives
 
 - Cloud security monitoring  
