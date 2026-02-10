@@ -49,7 +49,7 @@ Internet → Azure Public IP → Windows VM → Security Event Logs → Log Anal
 
 ### Objective
 
-Detect high-volume failed login attempts indicative of automated brute-force behavior.
+Identify abnormal authentication failure patterns that exceed baseline login behavior and indicate potential automated credential attacks.
 
 ### Key Log Source
 
@@ -81,6 +81,8 @@ SecurityEvent
 | sort by Attempts desc
 
 Investigation Findings
+
+Correlated failed authentication events with source IP geolocation and login frequency patterns to validate malicious behavior
 
 Detected over 1,000 failed login attempts within minutes
 
@@ -119,4 +121,8 @@ Threat detection and event correlation
 Incident triage documentation
 
 Cloud security best practices
+
+**Conclusion** 
+
+This lab demonstrates hands-on experience building and operating a cloud-native SIEM environment, detecting real attack behavior, and producing actionable remediation strategies aligned with security best practices.
 ---
