@@ -122,7 +122,11 @@ Incident triage documentation
 
 Cloud security best practices
 
+---
+
 ## Conclusion
 
 This lab demonstrates hands-on experience building and operating a cloud-native SIEM environment, detecting real attack behavior, and producing actionable remediation strategies aligned with security best practices.
----
+
+
+
