@@ -28,7 +28,8 @@ Public-facing RDP services are among the most commonly targeted attack vectors i
 ## Architecture Overview
 ### Azure Resource Group Overview
 
-![Architecture Overview](architecture-overview.v2)
+![Architecture Overview](architecture-overview.png)
+
 
 
 ### Environment Components
